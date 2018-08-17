@@ -3,6 +3,11 @@ MERN Stack Assessment for Turner
 Storypoint complexity: 8 (My Opinion ... given estimate was a 4)
 this basic app was constructed in approximately 4-5 hours
 
+Prerequisites:
+
+Node.js > 6.7
+NPM > 5.3
+
 
 Instructions from CLI:
 
