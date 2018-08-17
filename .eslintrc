@@ -1,0 +1,100 @@
+{
+    "parser": "babel-eslint",
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "plugins": [
+        "filenames"
+    ],
+    "extends": "airbnb",
+    "rules": {
+        "indent": [ 2, 4, { "SwitchCase": 1 } ],
+        "array-bracket-spacing": [ 2, "always" ],
+        "arrow-parens": [ 0 ],
+        "arrow-body-style": [ 0 ],
+        "curly": [ 2, "all" ],
+        "linebreak-style": 0,
+        "max-len": [ 0 ],
+        "no-console": [1, { "allow": [ "warn", "error" ] }],
+        "no-multi-spaces": 2,
+        "no-plusplus": 2,
+        "no-underscore-dangle": 2,
+        "object-curly-newline": [ 2, { "multiline": true, "consistent": true } ],
+        "padded-blocks": [ 2, "never" ],
+        "padding-line-between-statements": [
+            2,
+            { "blankLine": "always", "prev": "*", "next": "if" },
+            { "blankLine": "always", "prev": "*", "next": "switch" },
+            { "blankLine": "always", "prev": "*", "next": "return" }
+        ],
+        "lines-between-class-members": [ 2, "always" ],
+        "semi": [2, "always"],
+        "space-before-function-paren": [2, "never"],
+        "filenames/match-exported": 2,
+        "import/no-extraneous-dependencies": [ 0 ],
+        "import/no-unresolved": [2, { "ignore": ["\\.css$", "\\.less$"] }],
+        "react/destructuring-assignment": [1, "always"],
+        "react/jsx-indent": [ 2, 4 ],
+        "react/jsx-indent-props": [ 2, 4 ],
+        "react/require-default-props": [ 0 ],
+        "react/prop-types": [2, { "ignore": [ "children" ] } ],
+        "react/jsx-closing-bracket-location": [ 2, "after-props" ],
+        "react/jsx-curly-spacing": [ 2, { "when": "always" } ],
+        "react/jsx-filename-extension": [ 2, { "extensions": [".js", ".jsx"] } ],
+        "react/jsx-max-props-per-line": [2, { "maximum": 1 }],
+        "react/forbid-prop-types": [ 2, { "forbid": [ "any" ] } ],
+        "react/sort-comp": [ 2, {
+            "order": [
+                "defaultProps",
+                "propTypes",
+                "static-methods",
+                "constructor",
+                "state",
+                "componentDidCatch",
+                "componentWillReceiveProps",
+                "shouldComponentUpdate",
+                "componentWillUpdate",
+                "componentWillMount",
+                "render",
+                "componentDidUpdate",
+                "componentDidMount",
+                "componentWillUnmount",
+                "/^render.+$/",
+                "/^handle.+$/",
+                "/^get.+$/",
+                "/^fetch.+$/",
+                "everything-else"
+            ]
+        } ],
+        "jsx-a11y/href-no-hash": "off",
+        "jsx-a11y/anchor-is-valid": [ 2, {
+            "components": []
+        } ],
+        "jsx-a11y/label-has-for": [ 2, {
+            "components": [],
+            "required": {
+                "every": [ "nesting", "id" ]
+            },
+            "allowChildren": true
+        } ]
+    },
+    "overrides": [
+        {
+            "files": [ "**/*.test.js", "**/__mocks__/*.js" ],
+            "env": {
+                "jest": true
+            },
+            "rules": {
+                "no-unused-expressions": 0
+            }
+        }
+    ]
+}

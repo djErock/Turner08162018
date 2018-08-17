@@ -1,0 +1,53 @@
+.App-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.App {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.App-header {
+  flex: 0;
+  flex-direction: row;
+  background-color: #0a4cb5;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-body {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.App-footer {
+  display: flex;
+  flex: 0;
+  flex-direction: row;
+}
+
+.App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 80px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
